@@ -1,0 +1,220 @@
+/* Global Styles */
+/* Ensure the page content is fully covered and scrollable */
+html, body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+  background: url('https://c4.wallpaperflare.com/wallpaper/391/342/369/lake-night-moon-mountains-hd-free-full-moon-wallpaper-preview.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  animation: fadeIn 1s ease-in;
+  min-height: 100vh;
+}
+
+
+/* Main container for content */
+#app {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow effect */
+  border: 2px solid #fff;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Main Title */
+.main-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #FF8C00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Content Styling */
+.hero-content {
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Weather container */
+#weather-container {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.emoji {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  animation: bounce 1.5s infinite;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffdd57;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-top: 2px solid #ffdd57;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Button styles */
+button {
+  padding: 14px 28px;
+  background-color: #f9b300;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00238b;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+
+}
+
+/* Song recommendations container */
+#songs-container {
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#songs-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffdd57; /* Warm yellow color for the title */
+}
+
+#songs-container iframe {
+  width: 100%; /* Make iframe full width */
+  height: 352px; /* Height of the Spotify playlist iframe */
+  border-radius: 12px;
+  border: none; /* Remove the border around the iframe */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+  margin-top: 10px; /* Add some spacing on top */
+}
+
+#songs {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* Keyframes animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1.title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .emoji {
+    width: 50px;
+    height: 50px;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  #songs {
+    font-size: 1rem;
+  }
+}
+
+/* Styling the input field */
+#manual-location {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 2px solid #ffdd57;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.9); /* Lighter background for better contrast */
+  color: #333;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect for better interactivity */
+#manual-location:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.7);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Placeholder text styling */
+#manual-location::placeholder {
+  color: #281818; /* Darker gray for better visibility */
+  font-style: italic;
+}

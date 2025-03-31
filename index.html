@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather-Based Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 class="main-title"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="38" height="38" />ATMOTUNE<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="38" height="38" /></h1>
+  <div class="hero-content">
+    <h1 class="title">Vibe to the Rhythm of the Weather<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="38" height="38" /></h1>
+    <p class="description">Tunes that match your weather, powered by OpenWeatherMap and Spotify.</p>
+  </div>
+  
+  <div id="weather-container">
+    <div id="app">
+     
+      <h2><img
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Sun%20with%20Face.png"
+          alt="Sun with Face" width="45" height="45" />Current Location Weather<img
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/New%20Moon%20Face.png"
+          alt="New Moon Face" width="45" height="45" /></h2>
+      <p id="current-weather">Loading... <span class="loading-spinner"></span></p>
+
+      <h2>Manual Location Page</h2>
+      <p><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Backhand%20Index%20Pointing%20Down.png" alt="Backhand Index Pointing Down" width="40" height="40" /></p>
+      <a href="main.html"><button>Go to Manual Location</button></a>
+    </div>
+
+    <div id="songs-container">
+      <h2> <img
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Musical%20Notes.png"
+          alt="Musical Notes" width="50" height="50" /> Song Recommendations <img
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Musical%20Notes.png"
+          alt="Musical Notes" width="50" height="50" /> </h2>
+      <div id="songs"></div>
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+
+
+</body>
+
+</html>

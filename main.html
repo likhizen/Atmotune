@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather-Based Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Weather Container -->
+  <div id="weather-container">
+    <div id="app">
+      <div class="emoji-container">
+        <img class="emoji e1"
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Rain.png"
+          alt="Cloud with Rain" />
+        <img class="emoji e2"
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Lightning%20and%20Rain.png"
+          alt="Cloud with Lightning and Rain" />
+        <img class="emoji e3"
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Snow.png"
+          alt="Cloud with Snow" />
+        <img class="emoji e7"
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Sun%20Behind%20Small%20Cloud.png"
+          alt="Sun Behind Small Cloud" />
+        <img class="emoji e6"
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Sun%20Behind%20Rain%20Cloud.png"
+          alt="Sun Behind Rain Cloud" />
+      </div>
+      <h2>📍Manual Location</h2>
+      <input type="text" id="manual-location" placeholder="Enter city name">
+      <button onclick="fetchManualWeather()">Get Weather</button>
+      <p id="manual-weather">Loading... <span class="loading-spinner"></span></p>
+    </div>
+
+    <!-- Song Recommendations Container -->
+    <div id="songs-container">
+      <h2> <img
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Musical%20Notes.png"
+          alt="Musical Notes" width="50" height="50" /> Song Recommendations <img
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Musical%20Notes.png"
+          alt="Musical Notes" width="50" height="50" /> </h2>
+      <div id="songs"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
